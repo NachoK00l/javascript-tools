@@ -1,0 +1,1 @@
+[Character counter](https://nacho.cool/Javascript-Tools/character-counter)
