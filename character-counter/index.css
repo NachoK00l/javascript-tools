@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+
+.flex-child {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
