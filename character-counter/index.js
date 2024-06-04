@@ -56,7 +56,7 @@ function updateWordCount(){
     let words = text.split(" ");
 
     let wordCount;
-    if (words[words.length - 1] == "") {
+    if (words[words.length - 1] == "" || words[words.length - 1] == " ") {
         wordCount = words.length - 1;
     } else {
         wordCount = words.length;
