@@ -3,4 +3,5 @@ You can find the source code the [Github repo](https://github.com/NachoK00l/java
 
 Pages:
 
-* [Character counter](https://nacho.cool/javascript-tools/character-counter)
+* [Character counter](/character-counter)
+* [Hammer Units Converter](/hammer-units-converter)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hammer Units Converter</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+
+        <h1>Hammer Units Converter</h1>
+
+        <select id="unit-select" onchange="unitChanged()" onload="unitChanged()" style="width: 250px;" required>
+            <option value="cs2" selected>CS2 Hammer Units</option>
+            <option value="tf2">TF2 Hammer Units</option>
+        </select>
+
+        <div>
+            <p>Meters</p>
+            <input type="number" id="meters" placeholder="Enter meters" onkeyup="metersUpdated()" style="width: 250px;">
+        </div>
+
+        <div>
+            <p>Hammer Units</p>
+            <input type="number" id="hammers" placeholder="Enter hammer units" onkeyup="hammersUpdated()" style="width: 250px;">
+        </div>
+
+    </body>
+</html>
