@@ -1,4 +1,4 @@
-var huPerMeter = 39.6278;
+var huPerMeter = 52.52100840336134;
 
 var gridSize = 64;
 
