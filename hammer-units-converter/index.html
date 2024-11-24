@@ -6,23 +6,53 @@
         <script src="index.js"></script>
     </head>
     <body>
+        <h1 class="center">Hammer Units Converter</h1>
 
-        <h1>Hammer Units Converter</h1>
+        <div class="center">
+            <div style="padding: 10px;">
+                <select id="unit-select" onchange="unitChanged()" onload="unitChanged()" style="width: 250px;" required>
+                    <option value="cs2" selected>CS2 Hammer Units</option>
+                    <option value="tf2">TF2 Hammer Units</option>
+                </select>
+    
+                <div>
+                    <p>Meters</p>
+                    <input type="number" id="meters" placeholder="Enter meters" onkeyup="metersUpdated()" style="width: 250px;">
+                </div>
+    
+                <div>
+                    <p>Hammer Units</p>
+                    <input type="number" id="hammers" placeholder="Enter hammer units" onkeyup="hammersUpdated()" style="width: 250px;">
+                </div>
+            </div>
 
-        <select id="unit-select" onchange="unitChanged()" onload="unitChanged()" style="width: 250px;" required>
-            <option value="cs2" selected>CS2 Hammer Units</option>
-            <option value="tf2">TF2 Hammer Units</option>
-        </select>
-
-        <div>
-            <p>Meters</p>
-            <input type="number" id="meters" placeholder="Enter meters" onkeyup="metersUpdated()" style="width: 250px;">
+            <div style="padding: 10px;">
+                <div>
+                    <p>Grid Size</p>
+                    <select id="grid-select" onchange="gridChanged()" style="width: 250px;" required>
+                        <option value="0.125">0.125</option>
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="32">32</option>
+                        <option value="64" selected>64</option>
+                        <option value="128">128</option>
+                        <option value="256">256</option>
+                        <option value="512">512</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <p>Relative Scale</p>
+                    <input type="number" id="scale" placeholder="" style="width: 250px;">
+                </div>
+            </div>
         </div>
 
-        <div>
-            <p>Hammer Units</p>
-            <input type="number" id="hammers" placeholder="Enter hammer units" onkeyup="hammersUpdated()" style="width: 250px;">
-        </div>
-
+        
     </body>
 </html>
